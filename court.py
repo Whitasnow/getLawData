@@ -19,7 +19,7 @@ data.encoding=charset['encoding']
 # print(soup)
 
 data1 = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]
-
+# 123
 # json = json.dumps(data.text,indent=4,ensure_ascii=False)
 json = demjson.encode(data.text)
 print(json)
