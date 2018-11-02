@@ -59,10 +59,10 @@ def do_insert(href):
             print('zuozhe_riqi_info出错')
 
 if __name__=='__main__':
-    do_insert('http://english.gov.cn/policies/policy_watch/2016/11/15/content_281475492015808.htm')
-    # pool = Pool(3)
-    # urls = get_lists()
-    # sys.setrecursionlimit(10000)
-    # pool.map(do_insert, urls)
-    # pool.close()
-    # pool.join()
+    # do_insert('http://english.gov.cn/policies/latest_releases/2018/11/01/content_281476371228670.htm')
+    pool = Pool(3)
+    urls = get_lists()
+    sys.setrecursionlimit(10000)
+    pool.map(do_insert, urls)
+    pool.close()
+    pool.join()
